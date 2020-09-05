@@ -2,7 +2,7 @@
 {{ $url := printf "%s" .Permalink | absLangURL }}
 {{ $icon_size := "32px" }}
 
-{{ if not .Params.disable_share }}
+{{ if not .Site.Params.disable_share }}
   <div id="sharing" class="mt3">
 
     {{ $facebook_href := printf "https://www.facebook.com/sharer.php?u=%s" $url }}
